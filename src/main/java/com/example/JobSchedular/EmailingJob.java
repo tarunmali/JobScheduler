@@ -16,7 +16,7 @@ public class EmailingJob implements Job{
     @Override
     public void execute() {
         this.emailSender.send(emailDetails.getDestination(), emailDetails.getSubject(), emailDetails.getText());
-        System.out.println("execute");
+        System.out.println("Execute Email Job");
     }
 
     @Override
