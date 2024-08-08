@@ -24,6 +24,7 @@ public class JobsQueue {
     }
 
     public void addJob(Job job){
+//        System.out.println("addJob");
         this.quedJobs.put(job);
     }
 

@@ -16,11 +16,20 @@ public class EmailingJob implements Job{
     @Override
     public void execute() {
         this.emailSender.send(emailDetails.getDestination(), emailDetails.getSubject(), emailDetails.getText());
+        System.out.println("execute");
     }
 
     @Override
     public Timestamp getTriggerTime() {
         return this.emailDetails.getTriggerTime();
+    }
+
+    public EmailDetails getEmailDetails() {
+        return emailDetails;
+    }
+
+    public EmailSender getEmailSender() {
+        return emailSender;
     }
 
 

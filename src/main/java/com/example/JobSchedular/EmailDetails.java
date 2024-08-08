@@ -1,5 +1,6 @@
 package com.example.JobSchedular;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -57,5 +58,6 @@ public class EmailDetails {
     private String destination;
     private String subject;
     private String text;
+
     private Timestamp triggerTime;
 }
