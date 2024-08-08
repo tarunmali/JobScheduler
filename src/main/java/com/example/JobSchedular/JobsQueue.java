@@ -1,9 +1,12 @@
 package com.example.JobSchedular;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Comparator;
 import java.util.concurrent.PriorityBlockingQueue;
 
 //Study PriorityBlockingQueue
+@Component
 public class JobsQueue {
     private final PriorityBlockingQueue<Job> quedJobs;
     //why final?
